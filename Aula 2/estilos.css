@@ -12,8 +12,9 @@ textarea{
     aside{
         display: none;
     }
-}
+
 
 iframe{
-    height: 480px;
+    height: 600px;
+}
 }
