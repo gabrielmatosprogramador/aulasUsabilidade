@@ -18,3 +18,24 @@ iframe{
     height: 600px;
 }
 }
+
+.itens-menu{
+    text-align: start;
+}
+
+.menu-lateral{
+    max-height: 30px;
+    overflow-y: hidden;
+    flex: 100%;
+    transition: all 1s ease;
+    text-align: start;
+}
+
+.menu-lateral:hover{
+    transition: all 1s ease;
+    max-height: 1000px;
+}
+
+.flex-container{
+    flex-direction: column;
+}

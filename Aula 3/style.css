@@ -1,0 +1,15 @@
+.menu-sup a{
+    color: blueviolet;
+    text-decoration: none;
+    transition: all 0.6s ease;
+    padding: 2;
+}
+
+.menu-sup a:hover{
+    color: rgb(212, 0, 255);
+    transition: all 0.6s ease;
+}
+
+section{
+    height: 400px; /*apagar depois*/
+}
