@@ -1,0 +1,9 @@
+body, html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.impar{
+    background-color: brown !important;
+}
+
