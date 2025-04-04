@@ -20,12 +20,13 @@ fetch(`${MOVIE_URL}${movieId}?${API_KEY}${LANGUAGE_PARAM}`)
                 .then((creditsData) => {
                     const director = creditsData.crew.find((crew) => crew.job === "Director");
                     movieDetailsDiv.innerHTML = `
-                        <h1>${data.title}</h1>
-                        <p>Ano: ${releaseYear}</p>
+                    <div class="detalhes">
+                        <h1>${data.title} - Ano: ${releaseYear}</h1>
                         <img src="${IMAGE_URL}${data.poster_path}" alt="Poster do filme">
                         <p>Sinopse: ${data.overview}</p>
                         <p>Nota no TMDB: ${data.vote_average}/10</p>
                         <p>Diretor: ${director ? director.name : "Não encontrado"}</p>
+                    </div>
                     `;
                 })
                 .catch((error) => console.error("Erro ao buscar créditos do filme:", error));

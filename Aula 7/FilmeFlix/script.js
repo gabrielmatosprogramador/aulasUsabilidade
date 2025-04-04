@@ -21,11 +21,13 @@ form.addEventListener("submit", (e) => {
                     data.results.forEach((movie) => {
                         const movieDiv = document.createElement("div");
                         movieDiv.innerHTML = `
-                            <a href="movie.html?id=${movie.id}">
-                                <h2>${movie.title}</h2>
-                                <img src="${IMAGE_URL}${movie.poster_path}" alt="Poster do filme">
-                                <p>Ano: ${movie.release_date.split('-')[0]}</p>
-                            </a>
+                            <div class="movie">
+                                <a href="movie.html?id=${movie.id}">
+                                    <h2 class="titulo">${movie.title}</h2>
+                                    <img src="${IMAGE_URL}${movie.poster_path}" alt="Poster do filme">
+                                    <p class="ano">Ano: ${movie.release_date.split('-')[0]}</p>
+                                </a>
+                            </div>
                         `;
                         resultsDiv.appendChild(movieDiv);
                     });
