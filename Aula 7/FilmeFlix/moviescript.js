@@ -21,11 +21,21 @@ fetch(`${MOVIE_URL}${movieId}?${API_KEY}${LANGUAGE_PARAM}`)
                     const director = creditsData.crew.find((crew) => crew.job === "Director");
                     movieDetailsDiv.innerHTML = `
                     <div class="detalhes">
-                        <h1>${data.title} - Ano: ${releaseYear}</h1>
-                        <img src="${IMAGE_URL}${data.poster_path}" alt="Poster do filme">
-                        <p>Sinopse: ${data.overview}</p>
-                        <p>Nota no TMDB: ${data.vote_average}/10</p>
-                        <p>Diretor: ${director ? director.name : "Não encontrado"}</p>
+                        <h1 class="titulo">${data.title} - Ano: ${releaseYear}</h1>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img class ="poster" src="${IMAGE_URL}${data.poster_path}" alt="Poster do filme">
+                            </div>
+                            <div class="col-sm-8  text-danger infos">
+                                <div class="row">
+                                    <p class="row"><div class="col-sm-8  sinopse text-center">Sinopse: ${data.overview}</div></p>
+
+                                    <p class="row"><div class="col-sm-8 diretor text-center">Diretor: ${director ? director.name : "Não encontrado"}</div></p>
+
+                                    <p class="row "><div class="col-sm-8 nota text-center">Nota no TMDB: ${data.vote_average}/10</div></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     `;
                 })

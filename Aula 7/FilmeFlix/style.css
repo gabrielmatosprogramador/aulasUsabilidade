@@ -26,7 +26,6 @@ header h1{
 
 .pesquisar{
     height: 41px;
-    
     border: solid 2px rgb(231, 40, 40);
 }
 
@@ -64,3 +63,27 @@ header h1{
     text-align: center;
 }
 
+.detalhes .titulo{
+    color: rgb(231, 40, 40);
+    font-family: "Bebas Neue", sans-serif;
+    padding-left: 50px;
+}
+
+.detalhes .poster{
+    padding-left: 20px;
+}
+
+.sinopse{
+    color: #696565;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.nota{
+    color: #175815;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.diretor{
+    color: #696565;
+    font-family: "Bebas Neue", sans-serif;
+}
