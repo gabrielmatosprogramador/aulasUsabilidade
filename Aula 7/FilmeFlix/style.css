@@ -17,6 +17,8 @@ header h1{
 
 .search{
     width: 350px;
+    color: #696565;
+    font-family: "Bebas Neue", sans-serif;
     background-color: rgb(34, 33, 33);
     border: solid 2px rgb(231, 40, 40);
     border-radius: 5px;
@@ -86,4 +88,11 @@ header h1{
 .diretor{
     color: #696565;
     font-family: "Bebas Neue", sans-serif;
+}
+
+.botao{
+    background-color: rgb(231, 40, 40);
+    font-family: "Bebas Neue", sans-serif;
+    align-items: center;
+    justify-content: center;
 }

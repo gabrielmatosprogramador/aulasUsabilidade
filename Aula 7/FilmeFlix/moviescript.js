@@ -33,6 +33,11 @@ fetch(`${MOVIE_URL}${movieId}?${API_KEY}${LANGUAGE_PARAM}`)
                                     <p class="row"><div class="col-sm-8 diretor text-center">Diretor: ${director ? director.name : "Não encontrado"}</div></p>
 
                                     <p class="row "><div class="col-sm-8 nota text-center">Nota no TMDB: ${data.vote_average}/10</div></p>
+
+                                    <p class="alinhaBotao"><button class="btn btn-danger botao" href="#">Assistir o filme </button>
+
+                                    <p><button class="btn botao" href="#">Voltar</button>
+
                                 </div>
                             </div>
                         </div>
