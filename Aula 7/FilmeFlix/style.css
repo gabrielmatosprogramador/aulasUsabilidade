@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+
+header h1{
+    font-size: 75px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.pesquisa{
+    padding-top: 40px;
+}
+
+.search{
+    width: 350px;
+    color: #696565;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: rgb(34, 33, 33);
+    border: solid 2px rgb(231, 40, 40);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 4px;
+}
+
+.pesquisar{
+    height: 41px;
+    border: solid 2px rgb(231, 40, 40);
+}
+
+.results{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.movie{
+    margin: 20px;
+    width: 230px;
+    border: solid 2px rgb(231, 40, 40);
+    background-color: black;
+}
+
+.movie img{
+    width: 100%;
+    padding: 10px;
+}
+
+.movie .titulo{
+    color: rgb(231, 40, 40);
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+.movie a{
+    text-decoration: none;
+}
+
+.movie .ano{
+    color: rgb(231, 40, 40);
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+}
+
+.detalhes .titulo{
+    color: rgb(231, 40, 40);
+    font-family: "Bebas Neue", sans-serif;
+    padding-left: 50px;
+}
+
+.detalhes .poster{
+    padding-left: 20px;
+}
+
+.sinopse{
+    color: #696565;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.nota{
+    color: #175815;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.diretor{
+    color: #696565;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.botao{
+    background-color: rgb(231, 40, 40);
+    font-family: "Bebas Neue", sans-serif;
+    align-items: center;
+    justify-content: center;
+}
