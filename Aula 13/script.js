@@ -8,7 +8,7 @@ const musicas = [];
 form.addEventListener('submit', function(event) {
     event.preventDefault(); // Impede o envio do formulário.
 
-    const musicaDigitada = inputMusica.ariaValueMax.trim();
+    const musicaDigitada = inputMusica.value.trim();
     if (musicaDigitada === '') {
         alert('Digite o nome da música!');
         return;
@@ -23,8 +23,22 @@ form.addEventListener('submit', function(event) {
 function atualizarLista() {
     listaMusicas.innerHTML = '';
     musicas.forEach(function(musica) {
-        const li = documento.createElement('li');
+        const li = document.createElement('li');
         li.textContent = musica;
         listaMusicas.appendChild(li);
     })
 }
+
+bntTocar.addEventListener('click', function() {
+    if (musicas.length === 0) {
+        tocandoDiv.style.display = 'none';
+        alert('Adicione músicas à lista antes de tocar!');
+        return;
+    }
+
+    const musicaTocando = musicas.shift();
+    atualizarLista();
+    tocandoDiv.innerHTML = `Tocando a música:<br>${musicaTocando}`;
+    tocandoDiv.style.display = 'block';
+    
+});
